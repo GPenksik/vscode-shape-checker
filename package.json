@@ -1,0 +1,41 @@
+{
+  "name": "shape-checker",
+  "displayName": "Shape Checker",
+  "description": "Right-click a variable to send `<var>.shape` to the Python interactive window.",
+  "version": "0.0.1",
+  "publisher": "yourname",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:shapeChecker.checkShape"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "shapeChecker.checkShape",
+        "title": "Check Shape in Interactive Window"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "shapeChecker.checkShape",
+          "when": "editorLangId == python",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
