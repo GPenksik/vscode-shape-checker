@@ -3,7 +3,11 @@
   "displayName": "Shape Checker",
   "description": "Right-click a variable to send `<var>.shape` to the Python interactive window.",
   "version": "0.0.1",
-  "publisher": "yourname",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GPenksik/vscode-shape-checker.git"
+  },
+  "publisher": "Genia Penksik",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -37,5 +41,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GPenksik/vscode-shape-checker/issues"
+  },
+  "homepage": "https://github.com/GPenksik/vscode-shape-checker#readme"
 }
